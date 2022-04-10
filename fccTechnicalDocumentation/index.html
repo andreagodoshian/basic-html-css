@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>freeCodeCamp Technical Documentation Project</title>
+</head>
+<body>
+    <main id="main-doc">
+
+            <nav id="navbar">
+                <header id="nav-title">
+                        Basics of Java
+                </header>
+                <ul class="nav-ul">
+                    <li class="nav-li">
+                        <a href="#Introduction" class="nav-link">Introduction</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="#History" class="nav-link">History</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="#Primitive_Data_Types" class="nav-link">Primitive Data Types</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="#Relative_Data_Types" class="nav-link">Relative Data Types</a>
+                    </li>
+                    <li class="nav-li"></li>
+                        <a href="#Hello_World" class="nav-link">Hello World</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        <div id="container">
+            <section class="main-section" id="Introduction">
+                <header>
+                    Introduction
+                </header>
+                <p class="section-text">
+                    According to IBM: "Java is a widely used object-oriented 
+                    programming language and software platform that runs on billions 
+                    of devices, including notebook computers, mobile devices, 
+                    gaming consoles, medical devices and many others. 
+                    The rules and syntax of Java are based on the C and C++ languages.
+                    One major advantage of developing software with Java is its portability. 
+                    Once you have written code for a Java program on a notebook computer, 
+                    it is very easy to move the code to a mobile device."
+                    <br>
+                    <a href="https://www.ibm.com/cloud/learn/java-explained" target="_blank" class="section-link">
+                        Click here to read IBM's full description of Java.
+                    </a>
+                </p>
+                <p class="section-text">
+                    If you have a good sense of humor, you might like this video.
+
+                    <iframe width="420" height="240" src="https://www.youtube.com/embed/kdMG40wUCm4" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+                </p>
+            </section>
+
+            <hr class="these-are-the-breaks">
+
+            <section class="main-section" id="History">
+                <header>
+                    History
+                </header>
+                <p class="section-text">
+                    James Gosling and his team at Sun Microsystems initiated the Java language project 1991. 
+                    Although their initial goal was creating a better television experience, 
+                    they quickly surpassed that. The team initially called their new language Oak. 
+                    However, when they went to register the name in 1995, they found out that "Oak" was
+                    already taken. They eventually settled on the name "Java" (yes, they were just 
+                    making a coffee reference).
+                </p>
+                <p class="section-text">
+                    The Official Java Development Kit 1.0 was released in 1996.
+                    In less than ten years (2004), Java was running on over one billion devices.
+                    And by 2008, Java was running on over five billion devices!
+                    Therefore, it should come as no surprise that the multinational computer technology corporation 
+                    known as Oracle aquired Sun in 2009. Fast-forward to today (2022): 
+                    Java is still one of the top programming languages for developers & shows no signs of slowing down.
+                    <br>
+                    <a href="https://www.oracle.com/java/moved-by-java/timeline/" target="_blank" class="section-link">
+                        Click here to read Oracle's official Java Timeline. 
+                    </a>
+                </p>
+
+                <p class="section-text">
+                    If you have a good sense of humor, you might like this video as well.
+
+                    <iframe width="420" height="240" src="https://www.youtube.com/embed/m4-HM_sCvtQ" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+                </p>
+            </section>
+
+            <hr class="these-are-the-breaks">
+
+            <section class="main-section" id="Primitive_Data_Types">
+                <header>
+                    Primitive Data Types
+                </header>
+                <p class="section-text">
+                    According to the current Oracle documentation: "The Java programming language is statically-typed, 
+                    which means that all variables must first be declared before they can be used. 
+                    This involves stating the variable's type and name (...):
+                    <code>int gear = 1;</code>
+                    Doing so tells your program that a field named 'gear' exists, 
+                    holds numerical data, and has an initial value of '1' (...).
+                </p>
+                <p class="section-text">In addition to int, the Java programming language 
+                    supports seven other primitive data types. A primitive type is 
+                    predefined by the language and is named by a reserved keyword. 
+                    Primitive values do not share state with other primitive values. 
+                    The eight primitive data types supported by the Java programming language are:
+                    <ul id="primitive-chart">
+                        <li>
+                            <span class = "key">byte:</span> The byte data type is an 8-bit signed two's complement integer. 
+                            It has a minimum value of -128 and a maximum value of 127 (inclusive)...
+                        </li>
+                        <li>
+                            <span class = "key">short:</span> The short data type is a 16-bit signed two's complement integer. 
+                            It has a minimum value of -32,768 and a maximum value of 32,767 (inclusive)...
+                        </li>
+                        <li>
+                            <span class = "key">int:</span> By default, the int data type is a 32-bit signed two's complement integer, 
+                            which has a minimum value of -231 and a maximum value of 231-1...
+                        </li>
+                        <li>
+                            <span class = "key">long:</span> The long data type is a 64-bit two's complement integer. 
+                            The signed long has a minimum value of -263 and a maximum value of 263-1...
+                        </li>
+                        <li>
+                            <span class = "key">float:</span> The float data type is a single-precision 32-bit IEEE 754 floating point. 
+                            Its range of values is beyond the scope of this discussion, but is specified in the 
+                            Floating-Point Types, Formats, and Values section of the Java Language Specification...
+                        </li>
+                        <li>
+                            <span class = "key">double:</span> The double data type is a double-precision 64-bit IEEE 754 floating point. 
+                            Its range of values is beyond the scope of this discussion, but is specified in the 
+                            Floating-Point Types, Formats, and Values section of the Java Language Specification...
+                        </li>
+                        <li>
+                            <span class = "key">boolean:</span> The boolean data type has only two possible values: true and false. 
+                            Use this data type for simple flags that track true/false conditions. This data type 
+                            represents one bit of information, but its "size" isn't something that's precisely defined.
+                        </li>
+                        <li>
+                            <span class = "key">char:</span> The char data type is a single 16-bit Unicode character. It has a minimum value 
+                            of '\u0000' (or 0) and a maximum value of '\uffff' (or 65,535 inclusive).
+                        </li>
+                    </ul>
+                    <br>
+                    <a href="https://www.oracle.com/java/moved-by-java/timeline/" target="_blank" class="section-link">
+                        For more information, please click here to read Oracle's official documentation. 
+                    </a>
+                </p>
+            </section>
+
+            <hr class="these-are-the-breaks">
+
+            <section class="main-section" id="Relative_Data_Types">
+                <header>
+                    Relative Data Types
+                </header>
+                <p class="section-text">
+                    Non-Primitive data types (also called <strong>Relative Data Types</strong>) are difficult to explain, 
+                    unless you have a basic understanding of programming
+                    (completing "30 Days Of Code" in any language should be enough). 
+                </p>
+                <p class="section-text">One reason they are difficult for absolute beginners to understand, is because Non-Primitive data is created by the programmer!
+                    And since they are created by the programmer, they need to reference a memory location (which is why they're also called 
+                    “reference variables”). Examples of non-primitive types include Strings, Arrays, Classes, Interface, etc.
+                </p>
+                <p class="section-text">
+                    Let's take a look at how to create two of the most popular Reference Variables: Strings and Arrays!
+                    <code>
+                        String myString = "Hello World!";
+                    </code>
+                    <code>
+                        int[] myArray = new int[] {1, 2, 3, 4, 5};
+                    </code>
+                </p>
+            </section>
+
+            <hr class="these-are-the-breaks">
+
+            <section class="main-section" id="Hello_World">
+                <header>
+                    Hello World
+                </header>
+            <p class="section-text">"Hello World" is a famous computer program which can easily be applied
+                to almost any language. For many programmers, "Hello World" is the first program that they write.
+                The goal of "Hello World" is to explain the core structure & test if your software
+                is working, by simply diplaying the words "Hello World" on the screen.
+            </p>
+            <p class="section-text">       
+                Although installing Java, choosing an IDE, etc. is outside the scope of this discussion, here is a
+                breakdown of how "Hello World" works in Java from GeeksForGeeks:
+            </p> 
+                <ol id="geeks-for-geeks">
+                    <li>
+                        <span class = "key">Class definition:</span>
+                        This line uses the keyword class to declare that a new class is being defined. 
+                        It [also has] an identifier that is the name of the class. The entire class definition, 
+                        including all of its members, will be between the opening curly brace { and the closing curly brace }.
+                        <code>class HelloWorld {...}</code>
+                    </li>
+                    <li>
+                        <span class = "key">main method:</span>
+                        In the Java programming language, every application must contain a main method whose signature is: 
+                        <code>public static void main(String[] args) {...}</code>
+                    </li>
+                    <li>
+                        <span class = "key">You're ready to code!</span> The next line of code is shown here. Notice that it occurs inside the main() method. 
+                        <code>System.out.println("Hello World!");</code>
+                    </li>
+
+                    <li>
+                        <span class = "key">Final product:</span> your code should look like this:
+                        <code id="hello-world-example">
+                            // This is a simple Java program.
+                            <br>// FileName : "HelloWorld.java".
+                            <br>            
+                            <br>class HelloWorld {
+                                <br>// Your program begins with a call to main().
+                                <br>// Prints "Hello, World" to the terminal window.
+                                <br>public static void main(String args[])
+                                    <br>{ System.out.println("Hello, World"); }
+                            <br>}
+                        </code>
+                    </li>
+                </ol>
+                <a href="https://www.geeksforgeeks.org/java-hello-world-program/" target="_blank" class="section-link">
+                    For more information, please click here to read the entire GeeksForGeeks article.
+                </a>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
