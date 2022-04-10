@@ -1,0 +1,45 @@
+body{
+    background-color: #304d9c;
+    font-family: georgia;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  #main{
+    background-color: white;
+    border-width: 10px;
+    border-style: solid;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  #title{
+    font-size: 42px;
+  }
+  
+  #subtitle{
+    font-weight: bold;
+  }
+  
+  #image{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  #img-caption{
+    font-style: italic;
+  }
+  
+  #tribute-info{
+    padding: 1px 25px 25px;
+  }
+  
+  #about-song{
+    background-color: #d8291a;
+    color: white;
+    margin: 50px;
+    padding: 25px;
+    
+  }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>freeCodeCamp Survey Project</title>
+</head>
+<body>
+
+    <div id="container">
+
+        <header>
+        <h1 id="title">Animal Crossing Survey Form</h1>
+        <p id="description">I love the Animal Crossing series! Therefore, if I have to create a survey in order to obtain a freeCodeCamp Certificate, then this is the information that I want to gather!</p>
+        <p id="disclaimer">P.S. Please don't sue me, Nintendo 😉</p>
+        </header>
+          
+          <hr>
+        
+        <form action="" id="survey-form">
+          
+          <div class="form-intro">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" class="formControl" placeholder="Please enter your name" required>
+          </div>
+          
+          <div class="form-intro">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" class="formControl" placeholder="Please enter your email" required>
+          </div>
+          
+          <div class="form-intro">
+            <label for="number" id="number-label">Average Time Spent Playing Animal Crossing Per Day</label>
+            <input type="number" min="0" max="24" name="number" id="number" class="formControl" placeholder="Please enter average hours per day" required>
+          </div>
+          
+          <div class="form-middle">
+            <p class="other-label">Which game in the Animal Crossing series is your favorite?</p>
+            <select name="game-title" id="dropdown" class="formControl" required>
+              <option value="" disabled selected>Please select one title</option>
+              <option value="animal-forest">Animal Forest</option>
+              <option value="wild-world">Wild World</option>
+              <option value="city-folk">City Folk</option>
+              <option value="new-leaf">New Leaf</option>
+              <option value="new-horizons">New Horizons</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+            <div class="form-middle">
+              <p class="other-label">Do you play Pocket Camp?</p>
+              <label for="">
+                <input type="radio" name="pocket-camp" value="yes" class="input-radio" checked>Yes</label>
+              <label for="">
+                <input type="radio" name="pocket-camp" value="sometimes" class="input-radio">Sometimes</label>
+                <label for="">
+                <input type="radio" name="pocket-camp" value="no" class="input-radio">No</label>
+          </div>
+          
+          <div class="form-middle">
+            <p class="other-label">Which villager personality-types do you prefer?</p>
+            <label for="">
+              <input type="checkbox" name="prefer" class="checkbox" value="big-sister">Big Sister</label>
+            <label for="">
+              <input type="checkbox" name="prefer" class="checkbox" value="normal">Normal</label>
+            <input type="checkbox" name="prefer" class="checkbox" value="peppy">Peppy</label>
+            <label for="">
+              <input type="checkbox" name="prefer" class="checkbox" value="snooty">Snooty</label>
+              <label for="">
+              <input type="checkbox" name="prefer" class="checkbox" value="cranky">Cranky</label>
+            <label for="">
+              <input type="checkbox" name="prefer" class="checkbox" value="jock">Jock</label>
+            <input type="checkbox" name="prefer" class="checkbox" value="lazy">Lazy</label>
+            <label for="">
+              <input type="checkbox" name="prefer" class="checkbox" value="smug">Smug</label>
+          </div>
+        
+        <div class="form-closing">
+          <p class="other-label">Give me your best FAMILY FRIENDLY Animal Crossing rant!</p>
+          <textarea name="feedback" class="feedback" cols="10" rows="10" class="textarea" placeholder="Hate the way that certain furniture can't be centered in New Horizons? Do you wish Student Loans were more like Nook Loans? Are you the person that fell in love with Cookie? Let me know...."></textarea>
+        </div>
+        
+        <div class="form-closing">
+          <button type="submit" id="submit" class="btn">Submit</button>
+        </div>
+            
+        </form>
+        
+        </div>
+
+
+
+
+    
+</body>
+</html>

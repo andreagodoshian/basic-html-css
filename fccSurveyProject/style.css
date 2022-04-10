@@ -1,0 +1,73 @@
+body{
+    background-image: url("new_leaf_desktop.png");
+    border-radius: 5px;
+    font-family: georgia;
+  }
+  
+  header{
+    background: #5adbc5;
+    text-align: center;
+    width: 100%;
+  }
+  
+  label {
+    display: flex;
+    padding: 10px 0;
+  }
+  
+  input[type=text], input[type=email], input[type=number]{
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-intro, .other-label{
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: underline;
+  }
+  
+  #container{
+    background: #ecefd6;
+    border: solid 10px black;
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 60%;
+    padding: 0 25px;
+  }
+  
+  #description{
+    font-style: italic;
+    max-width: 75%;
+    margin: 0 auto;
+  }
+  
+  #disclaimer{
+    font-weight: bold;
+  }
+  
+  .feedback{
+    border: 1px solid #ccc;
+    width: 100%;
+    margin: 0 0 20px;
+    resize: none;
+  }
+  
+  #submit{
+    display: block;
+    background: #5adbc5;
+    font-family: georgia;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 20px;
+    padding: 15px;
+    width: 100%;
+  }

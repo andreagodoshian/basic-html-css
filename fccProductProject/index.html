@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp Product Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="header">
+        <nav id="nav-bar">
+            <div>
+                    <img src="pls_dont_sue_logo.png" alt="Doge Vibraphones Logo" id="header-img">
+            </div>
+            <ul class="nav-list">
+                <li><a href="#header" class="nav-link">Home</a></li>
+                <li><a href="#title" class="nav-link">About</a></li>
+                <li><a href="#vibraphone" class="nav-link">Vibraphone?</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="container">
+
+    <h1 id="title">Doge Vibraphones</h1>
+
+    <p class="about"><strong>About Doge Vibraphones...</strong> Doge Vibraphones was created by a Percussion Performance major named Andrea Godoshian. 
+        Despite her love for the craft, she is a terrible musician & gets bullied every time she walks on stage.</p>
+    <p class="about">Pity party aside! It seems like Andrea has pulled herself together & found a place for herself in the Tech industry... 
+        however, the Tech industry <a href="https://www.freecodecamp.org/" target="_blank">(freeCodeCamp specifically)</a> 
+        wants her to <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page" target="_blank">
+            create a Product Landing page!</a> 
+        Since Andrea is not very creative, took a page out of freeCodeCamp's book & decided to make a 
+        <a href="https://codepen.io/freeCodeCamp/full/RKRbwL" target="_blank">"product landing page" for instruments.</a> However, as Andrea began creating this page,
+        she was flooded with flashbacks about her terrible experiences as a musician... which is why Andrea turned this into a meme 🤣💀</p>
+
+    <hr>
+
+    <h1 id="vibraphone">What is a Vibraphone?</h1>
+
+    <p class="about">According to Britannica online (because again, I am not very creative), a Vibraphone is a 
+        "...percussion instrument that has tuned metal bars and is similar in shape to a xylophone. 
+        Felt or wool beaters are used to strike the bars, giving a soft, mellow tone quality. 
+        Suspended vertically below each aluminum bar is a tubular, tuned resonator that sustains the tone when the bar is struck."</p>
+        
+    <p class="about">Still confused? Check out this video from Vic Firth. Please don't sue me, Vic Firth.</p>
+
+    <video id="video" controls width="350">
+        <source src="vic_firth_pls_dont_sue.mp4" type="video/mp4">
+        <p>Your browser doesn't support HTML5 video. Here is
+            a <a href="https://www.youtube.com/watch?v=DRPqWCWufN8">link to the video</a> instead.</p>
+    </video>
+
+    <hr>
+
+    <h1 id="products">Our Products</h1>
+
+    <section id="vibe-options">
+
+        <div class="card">
+            <div class="card-image smol-img"></div>
+            <h2>Portable</h2>
+            <p class="card-txt">Are you tired of the Percussion community sleeping on how
+                innovative the Vibraphonette was? Well... Andrea is!</p>
+            <a href="#" class="info-btn">Read More</a>
+        </div>
+
+        <div class="card">
+            <div class="card-image oct3-img"></div>
+            <h2>Three Octave</h2>
+            <p class="card-txt">Are a poor & delusional enough to think
+                studying Classical Percussion is a good idea? 
+                Then this should get you by.</p>
+            <a href="#" class="info-btn">Read More</a>
+
+        </div>
+
+        <div class="card">
+            <div class="card-image oct4-img"></div>
+            <h2>Four Octave</h2>
+            <p class="card-txt">Don't lie to me, sussy baka! 
+                You know that you want four octaves, 
+                even though the benefits don't apply to 2020 literature...</p>
+            <a href="#" class="info-btn">Read More</a>
+        </div>
+
+    </section>
+
+    <hr>
+
+    <h1 id="contact">Contact Us</h1>
+    <p class="about">Do you hold a grude against Andrea for ruining your drumline experience? 
+        Or... maybe, for some odd reason, you actually want to buy one of these monstrosities! 
+        Just let me know. Because as my coach told me (right before a big performance): I am a black hole. 
+        So whatever you send me will just be destroyed & therefore doesn't matter!</p>
+
+
+    <!-- steps 7, 8, 9, 10, 11, 12
+    CREATE FORM!!! -->
+
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
+          
+        <div class="form-intro">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" name="name" id="name" class="formControl" placeholder="Please enter your name" required>
+        </div>
+        
+        <div class="form-intro">
+          <label for="email" id="email-label">Email</label>
+          <input type="email" name="email" id="email" class="formControl" placeholder="Please enter your email" required>
+        </div>
+      
+      <div class="form-closing">
+        <p class="other-label">What do you have to say for yourself?</p>
+        <textarea name="feedback" class="feedback" cols="10" rows="10" class="textarea" placeholder="Go ahead. It doesn't matter. Andrea can't ready anyways..."></textarea>
+      </div>
+      
+      <div class="form-closing">
+        <button type="submit" id="submit" value="submit">Submit</button>
+      </div>
+          
+      </form>
+
+    </div>
+
+
+
+    
+    
+</body>
+</html>

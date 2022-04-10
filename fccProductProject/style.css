@@ -1,0 +1,182 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: black;
+}
+
+html {
+    scroll-padding-top: 100px;
+}
+
+h1{
+    text-decoration: underline;
+}
+
+nav{
+    display: flex;
+    background: #444;
+    justify-content: space-evenly;
+    padding: 0;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+}
+
+nav div:first-child img{
+    margin: 0;
+    max-width: 100px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    float: right;
+    font-size: 20px;
+}
+
+nav ul li a{
+    display: block;
+    border-right:1px solid #FFF;
+    color: #ddd;
+    padding: 15px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+label {
+    display: flex;
+    padding: 10px;
+}
+  
+input[type=text], input[type=email] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.about{
+    font-size: 14px;
+    padding: 0 30px;
+}
+
+.card{
+    background: #444;
+    color: #ddd;
+    height: 400px;  
+    width: 250px;
+    justify-content: center; 
+    margin: 10px;
+}
+
+.card-image{
+    background-color: black;
+    background-size: cover;
+    border: 1px solid black;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.smol-img{
+    background-image: url("pls_dont_sue_smol.jpg");
+}
+
+.oct3-img{
+    background-image: url("pls_dont_sue_3.jpg");
+}
+
+.oct4-img{
+    background-image: url("pls_dont_sue_4.jpg");
+}
+
+.card-txt{
+    font-size: 14px;
+    padding: 10px;
+}
+
+.info-btn {
+	background-color:white;
+	border-radius:20px;
+	display:inline-block;
+	cursor:pointer;
+	color:black;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+}
+.info-btn:hover {
+	background-color:black;
+    color: white;
+}
+
+.feedback{
+    border: 1px solid #ccc;
+    width: 90%;
+    margin: 0 0 20px;
+    resize: none;
+}
+
+#container{
+    background: white;
+    padding-top: 100px;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+#title{
+    font-size: 48px;
+}
+
+#vibe-options{
+    display: flex;
+}
+
+#submit{
+    display: inline-block;
+    background: black;
+    color: white;
+    font-family: georgia;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 20px;
+    padding: 15px;
+    width: 90%;
+	text-decoration:none;
+}
+
+#submit:hover {
+	background-color:white;
+    color: black;
+}
+
+@media (max-width: 700px){
+    nav div:first-child img{
+        max-width: 75px;
+        padding: 0;
+    }
+
+    nav li{
+        float: right;
+        font-size: 12px;
+    }
+
+    .card{
+        margin: 0 auto;
+    }
+
+    #vibe-options{
+        display: block;
+    }
+    
+}
