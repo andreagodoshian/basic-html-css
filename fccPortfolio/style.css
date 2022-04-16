@@ -1,0 +1,171 @@
+body {
+    background-color: black;
+    font-family: Cambria, Cochin, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+#navbar, ul {
+    background-color: black;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: white;
+    color: black;
+  }
+
+
+#welcome-section, #projects, #contact-me {
+    border-radius: 20px;
+    margin: 0 auto;
+    height: 100vh;
+    width: 95vw;
+}
+
+/* background */
+#welcome-section {
+    background-image: url("media\\goalie-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+/* left aligned because i'm cool */
+#welcome-container {
+    padding-top: 15em;
+    padding-left: 10px;
+    max-width: 60%;
+}
+
+/* main project container */
+#projects {
+    padding-top: 2em;
+    background-color: steelblue;
+    overflow-x: hidden; 
+    overflow-y: visible;   
+}
+
+/* contains all flex boxes */
+#flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-tile{
+    background-color: white;
+    border: 3px black solid;
+    border-radius: 5px;
+    height: 260px;  
+    width: 275px;
+    margin: 10px;
+}
+
+.project-image{
+    background-color: black;
+    background-size: cover;
+    border: 1px solid black;
+    height: 125px;
+    margin-bottom: 10px;
+}
+
+.chatbot-img {
+    background-image: url("media\\stock-chatbot.jpg");
+}
+
+.genspark-img {
+    background-image: url("media\\genspark_banner_blue.png");
+}
+
+.python-ml-img {
+    background-image: url("media\\python_ml.png");
+}
+
+.fcc-img {
+    background-image: url("media\\freecodecamp-cute.png");
+}
+
+.shecodes-img {
+    background-image: url("media\\shecodes-general.png");
+}
+
+.book-img {
+    background-image: url("media\\book-cover.jpg");
+}
+
+.project-title {
+    margin: 0;
+}
+
+.project-text{
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.project-btn {
+	border-radius:20px;
+	display: inline-block;
+    color: black;
+	font-size:15px;
+    font-weight: bold;
+	padding:15px 30px;
+}
+
+.project-btn:hover {
+	background-color:black;
+    color: white;
+}
+
+/* section id */
+#contact-me {
+    background-color: #b9ddf5;
+}
+
+/* for centering the text 'n stuff */
+#contact-container {
+    padding-top: 12em;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.general-link {
+    color: black;
+    font-weight: bold;
+}
+
+.general-link:hover {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 800px) {
+
+    #welcome-section, #contact-me {
+        overflow-x: hidden; 
+        overflow-y: visible;   
+    }
+}
